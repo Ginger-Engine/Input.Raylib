@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "R0OajPc3k+E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Input.RaylibInput\\Engine.Input.RaylibInput.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleks\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512",
+    "C:\\Users\\aleks\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
