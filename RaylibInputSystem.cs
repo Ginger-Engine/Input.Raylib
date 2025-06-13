@@ -6,7 +6,7 @@ namespace Engine.Input.RaylibInput;
 
 public class RaylibInputSystem : IInputSystem
 {
-    private readonly Dictionary<string, IInputAction> _actions = new();
+    private readonly Dictionary<string, IInputAction> _actions;
 
     public RaylibInputSystem(Dictionary<string, IInputAction> actions)
     {
