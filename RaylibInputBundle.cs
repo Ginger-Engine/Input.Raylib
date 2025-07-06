@@ -1,8 +1,8 @@
 ﻿using Engine.Core;
-using Engine.Input.RaylibInput.Devices;
+using Engine.Input.Raylib.Devices;
 using GignerEngine.DiContainer;
 
-namespace Engine.Input.RaylibInput;
+namespace Engine.Input.Raylib;
 
 public class RaylibInputBundle : IBundle
 {

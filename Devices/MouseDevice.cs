@@ -1,8 +1,10 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Collections.Generic;
+using System.Numerics;
 using Engine.Input.Devices;
 using Raylib_cs;
 
-namespace Engine.Input.RaylibInput.Devices;
+namespace Engine.Input.Raylib.Devices;
 
 public class MouseDevice : IInputDevice
 {
@@ -39,16 +41,16 @@ public class MouseDevice : IInputDevice
     public void Update()
     {
         // Обновление позиции и дельты
-        var currentPos = new Vector2(Raylib.GetMouseX(), Raylib.GetMouseY());
+        var currentPos = new Vector2(Raylib_cs.Raylib.GetMouseX(), Raylib_cs.Raylib.GetMouseY());
         _delta = currentPos - _lastMousePosition;
         _lastMousePosition = currentPos;
 
-        _wheel = Raylib.GetMouseWheelMove();
+        _wheel = Raylib_cs.Raylib.GetMouseWheelMove();
 
         // Обработка событий кнопок
         foreach (var (name, button) in _buttonMap)
         {
-            bool isDown = Raylib.IsMouseButtonDown(button);
+            bool isDown = Raylib_cs.Raylib.IsMouseButtonDown(button);
             _currState[name] = isDown;
 
             bool wasDown = _prevState.TryGetValue(name, out var prev) && prev;

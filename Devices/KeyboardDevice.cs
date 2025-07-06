@@ -1,5 +1,9 @@
-﻿using Engine.Input.Devices;
+﻿using System;
+using System.Collections.Generic;
+using Engine.Input.Devices;
 using Raylib_cs;
+
+namespace Engine.Input.Raylib.Devices;
 
 public class KeyboardDevice : IInputDevice
 {
@@ -43,7 +47,7 @@ public class KeyboardDevice : IInputDevice
     {
         foreach (var (name, key) in _keyMap)
         {
-            bool isDown = Raylib.IsKeyDown(key);
+            bool isDown = Raylib_cs.Raylib.IsKeyDown(key);
             _currState[name] = isDown;
 
             bool wasDown = _prevState.TryGetValue(name, out var prev) && prev;

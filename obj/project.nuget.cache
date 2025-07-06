@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GSXen/aYc/w=",
+  "dgSpecHash": "q0EoNvcUMlg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Input.RaylibInput\\Engine.Input.RaylibInput.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\projects\\Engine3\\Engine.Input.Raylib\\Engine.Input.Raylib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
