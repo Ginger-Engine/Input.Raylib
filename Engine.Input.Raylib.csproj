@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Engine.Input.Raylib</AssemblyName>
+        <RootNamespace>Engine.Input.Raylib</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Engine.Core\Engine.Core.csproj" />
+      <ProjectReference Include="..\Engine.Input\Engine.Input.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Raylib-cs" Version="7.0.1" />
+    </ItemGroup>
+
+</Project>
