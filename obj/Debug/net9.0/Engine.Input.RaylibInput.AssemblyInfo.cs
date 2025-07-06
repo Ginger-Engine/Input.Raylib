@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Engine.Input.RaylibInput")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38ad9ad393d6c01691366eee65f2e7aee8f76d37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72cf3d4ca348c5f60724bfe957af361cfb2bd0a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Engine.Input.RaylibInput")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Engine.Input.RaylibInput")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
