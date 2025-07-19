@@ -490,6 +490,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Engine.Core": "1.0.0",
+          "Engine.Rendering": "1.0.0",
           "YamlDotNet": "16.3.0"
         },
         "compile": {
@@ -497,6 +498,33 @@
         },
         "runtime": {
           "bin/placeholder/Engine.Input.dll": {}
+        }
+      },
+      "Engine.Physics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Engine.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Engine.Physics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Engine.Physics.dll": {}
+        }
+      },
+      "Engine.Rendering/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Engine.Core": "1.0.0",
+          "Engine.Physics": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Engine.Rendering.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Engine.Rendering.dll": {}
         }
       }
     }
@@ -1035,6 +1063,16 @@
       "type": "project",
       "path": "../Engine.Input/Engine.Input.csproj",
       "msbuildProject": "../Engine.Input/Engine.Input.csproj"
+    },
+    "Engine.Physics/1.0.0": {
+      "type": "project",
+      "path": "../Engine.Physics/Engine.Physics.csproj",
+      "msbuildProject": "../Engine.Physics/Engine.Physics.csproj"
+    },
+    "Engine.Rendering/1.0.0": {
+      "type": "project",
+      "path": "../Engine.Rendering/Engine.Rendering.csproj",
+      "msbuildProject": "../Engine.Rendering/Engine.Rendering.csproj"
     }
   },
   "projectFileDependencyGroups": {

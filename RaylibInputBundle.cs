@@ -1,4 +1,5 @@
 ﻿using Engine.Core;
+using Engine.Input.PointerEvents;
 using Engine.Input.Raylib.Devices;
 using GignerEngine.DiContainer;
 
@@ -10,5 +11,6 @@ public class RaylibInputBundle : IBundle
     {
         builder.Bind<KeyboardDevice>();
         builder.Bind<MouseDevice>();
+        builder.Bind<IPointerProvider>().From<RaylibPointerProvider>();
     }
 }
